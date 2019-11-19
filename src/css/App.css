@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  min-height:100vh;
+  text-align: center;
+/*background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+*/}
+.intro{
+  height:100vh;
+  display:flex; -webkit-display:flex; -moz-display:flex; -o-display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.introInner{
+
+}
+.title{
+    font-family: 'Bangers', cursive;
+    text-align:center;
+    font-size:69px;
+    font-weight:normal!important;
+    margin:0;
+    padding:0;
+    color:#ffffff;
+    text-shadow:1px 1px 6px #555555, -1px -1px 6px #555555;
+}
+.subtitle{  
+    font-family: 'Big Shoulders Display', cursive;
+    text-align:center;
+    font-size:29px;
+    font-weight:normal!important;
+    margin:0;
+    padding:0 0 30px 0;
+    color:#ffffff;
+    text-shadow:1px 1px 6px #555555, -1px -1px 6px #555555;
+}
+.search-form{
+  min-height:10vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.search-bar{
+  width:50%;
+  border:none;
+  padding:20px;
+  font-size:18px;
+  text-transform:uppercase;
+}
+
+.search-button{
+  background:#222222;
+  border:none;
+  color:#ffffff;
+  padding:20px;
+  font-size:18px;
+  text-transform:uppercase;
+  transition:0.3s all; -webkit-transition:0.3s all; -moz-transition:0.3s all;
+}
+
+.search-button:hover{
+  cursor:pointer;
+  background:#000000;
+}
+
+.recipes{
+  display:flex;
+  justify-content:space-around;
+  flex-wrap:wrap;
+}
+
+/*--SLIDESHOW--*/
+
+.cb-slideshow{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0; 
+    list-style:none;
+    z-index:-99;
+}
+.cb-slideshow:after { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0; 
+    list-style:none;
+}
+.cb-slideshow:after { 
+    content: '';
+    background: transparent url(../img/pattern.png) repeat top left; 
+/*    background:rgba(95, 96, 97, 0.4) url('http://mountaintheme.com/themeforest/mountain/demo-1/images/overlay.png') repeat top left;
+*/}
+.cb-slideshow li span { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 36s linear infinite 0s; 
+}
+.cb-slideshow li:nth-child(1) span { 
+    background-image: url(../img/img1.jpg) 
+}
+.cb-slideshow li:nth-child(2) span { 
+    background-image: url(../img/img2.jpg);
+    animation-delay: 6s; 
+}
+.cb-slideshow li:nth-child(3) span { 
+    background-image: url(../img/img3.jpg);
+    animation-delay: 12s; 
+}
+.cb-slideshow li:nth-child(4) span { 
+    background-image: url(../img/img4.jpg);
+    animation-delay: 18s; 
+}
+.cb-slideshow li:nth-child(5) span { 
+    background-image: url(../img/img5.jpg);
+    animation-delay: 24s; 
+}
+.cb-slideshow li:nth-child(6) span { 
+    background-image: url(../img/img6.jpg);
+    animation-delay: 30s; 
+}
+
+.cb-slideshow li:nth-child(2) div { 
+    animation-delay: 6s; 
+}
+.cb-slideshow li:nth-child(3) div { 
+    animation-delay: 12s; 
+}
+.cb-slideshow li:nth-child(4) div { 
+    animation-delay: 18s; 
+}
+.cb-slideshow li:nth-child(5) div { 
+    animation-delay: 24s; 
+}
+.cb-slideshow li:nth-child(6) div { 
+    animation-delay: 30s; 
+}
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+.no-cssanimations .cb-slideshow li span{
+  opacity: 1;
+}
+.no-flexbox .intro{
+  display:block;
+  text-align:center;
+  margin:60px auto;
+}
+.no-cssvhunit .intro{
+  height:600px;
+}
