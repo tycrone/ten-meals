@@ -103,7 +103,7 @@ return(
       </ul>
     <div className="intro">
       <div className="introInner">
-        <h1 className="title">Ten Recipes</h1>
+        <h1 className="title">Ten Meals</h1>
         <h3 className="subtitle">Enter any ingredient of your choice and receieve 10 top dish suggestions.</h3>
         <form onSubmit={getSearch} className="search-form">
           <input className="search-bar" type="text" value={search} onChange={updateSearch}/>

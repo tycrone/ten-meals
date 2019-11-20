@@ -93,6 +93,7 @@ code {
     z-index: 0; 
     list-style:none;
     z-index:-99;
+    margin:0;
 }
 .cb-slideshow:after { 
     position: fixed;
