@@ -1,5 +1,6 @@
 {
   "name": "reactapp1",
+  "homepage": "https://tylercrone.com/projects/tenmeals",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

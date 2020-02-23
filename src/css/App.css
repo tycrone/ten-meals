@@ -24,12 +24,12 @@ code {
   justify-content:center;
 }
 .introInner{
-
+  margin-top:-25px;
 }
 .title{
     font-family: 'Bangers', cursive;
     text-align:center;
-    font-size:69px;
+    font-size:77px;
     font-weight:normal!important;
     margin:0;
     padding:0;
